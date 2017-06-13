@@ -12,8 +12,12 @@
 	    background-color: red;
 	    font-family: 'PT Sans', sans-serif;
 	    overflow-x: hidden;  
-	}
 
+	    a {
+			text-decoration: none;
+		}
+	}
+												/*----------NAVIGATIN BAR---------------*/
 	nav	{
 		background-color: $livRedTrans;
 		height: 10vh;
@@ -81,14 +85,13 @@
 				padding: 7% 0;
 
 				a {
-				text-decoration: none;
 				color: $livRed;
 				font-size: 4vh;
 				}
 			}	
 		}
 	}
-
+												/*------------HOMEPAGE NEWS--------------*/
 	.newsSectionHome {
 		width: 100%;
 		margin: 20% 0 0 0;
@@ -193,4 +196,34 @@
 			}
 	    }
 	}
+
+	.section {
+		width: 100%;
+		display: none;
+		background-color: #fff;
+
+	}
+													/*--------------NEWS----------*/
+
+
+
+
+	.news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, , .news9 {
+		width: 100%;
+		text-align: center;
+		padding-top: 5%;
+		
+		img {
+			width: 100%;
+		}
+
+		h2 {
+			color: #000;
+			font-size: 4vh;
+			
+		}
+		
+	}
+
+		
 }
