@@ -3,13 +3,7 @@
 	body {
 		width: 100vw;
 		height: 100vh;
-		background-image: url(../img/liverpooolBackgroundMobile.jpg);
-		background-position: center;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-	    background-size: cover;
-	    background-position: center;
-	    background-color: red;
+		background-color: #fff;
 	    font-family: 'PT Sans', sans-serif;
 	    overflow-x: hidden;  
 
@@ -39,28 +33,28 @@
 		}
 
 		.hamburger	{
-			height: 50%;
+			height: 40%;
 			width: 10%;
 			float: right;
 			right: 7%;
-			top: 25%;
+			top: 30%;
 			position: relative;
 			
 			.line1, .line2, .line3 {
 				width: 100%;
 				height: 20%;
 				background-color: #FFF;
-				transition: transform .5s, top .5s;
+				transition: transform .3s, top .3s;
 				position: absolute;
 			}
 			.line1	{
-				top: 10%;
+				top: 0;
 			}
 			.line2	{
 				top: 40%;
 			}
 			.line3	{
-				top: 70%;
+				bottom: 0;
 			}
 			.ukrstanje	{
 				top: 40%;
@@ -80,6 +74,9 @@
 			right: 0;
 			display: none;
 			position: absolute;
+			z-index: 1000;
+			border-left: 2px solid $livRed;
+			border-bottom: 2px solid $livRed;
 			
 			li {
 				padding: 7% 0;
@@ -104,15 +101,19 @@
 		}
 		
 		.firstNewsHome {
-			width: 100%;
-			height: 30%;
+			width: 98%;
+			height: 20vh;
 			background-image: url(../img/vanDijk.jpg);
 			-webkit-background-size: cover;
 	    	background-size: cover;
 	    	background-position: center;
+	    	position: relative;
+	    	margin: 1%;
 
 	    	h1 {
-			padding: 30% 1% 5% 1%;
+				position: absolute;
+				bottom: 3%;
+				padding: 0 1%;
 			}
 	    }
 
@@ -124,11 +125,15 @@
 	    	background-position: center;
 	    	margin: 1%;
 	    	float: left;
+	    	position: relative;
+	    	
 	    }
 
 	    .h1NewsDef {
-	    	padding: 45% 1% 1% 1%;
+	    	bottom: 3%;
 			font-size: 2vh;
+			position: absolute;
+			padding: 0 1%;
 	    }
 
 	    .secondNewsHome {
@@ -200,14 +205,17 @@
 	.section {
 		width: 100%;
 		display: none;
-		background-color: #fff;
-
 	}
 													/*--------------NEWS----------*/
 
 
 
-
+	.tittle {
+		color: $livRed;
+		font-size: 4vh;
+		float: left;
+		margin: 2% 50% 2% 4%;
+	}												
 	.news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, , .news9 {
 		width: 100%;
 		text-align: center;
@@ -225,5 +233,47 @@
 		
 	}
 
-		
+													/*---------SQUAD--------*/
+
+	.player {
+		float: left;
+		width: 100%;
+		height: 15vh;
+
+		img {
+			width: 13vh;
+			float: left;
+			padding: 1vh;
+		}
+		h1 {
+			font-size: 4vh;
+			font-weight: bold;
+			padding: 3% 0 0 25%;
+		}
+		h2 {
+			font-size: 4vh;
+			font-weight: bold;
+			padding: 3% 0 0 25%;
+		}
+		.playerDetails {
+			padding: 0 0 2% 3%;
+			display: none;
+			h3 {
+				font-size: 2.5vh;
+			}
+		}
+	}												
+	.player:hover {
+		h1 {
+			font-size: 2.5vh;
+			padding-top: 1%;
+		}
+		h2 {
+			font-size: 2.5vh;
+			padding-top: 1%;
+		}
+		.playerDetails{
+			display: block;
+		}
+	}	
 }

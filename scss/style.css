@@ -3,13 +3,7 @@
   body {
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/liverpooolBackgroundMobile.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-color: red;
+    background-color: #fff;
     font-family: 'PT Sans', sans-serif;
     overflow-x: hidden; }
     body a {
@@ -31,24 +25,24 @@
       font-weight: 900;
       margin: 3.1vh 0; }
     nav .hamburger {
-      height: 50%;
+      height: 40%;
       width: 10%;
       float: right;
       right: 7%;
-      top: 25%;
+      top: 30%;
       position: relative; }
       nav .hamburger .line1, nav .hamburger .line2, nav .hamburger .line3 {
         width: 100%;
         height: 20%;
         background-color: #FFF;
-        transition: transform .5s, top .5s;
+        transition: transform .3s, top .3s;
         position: absolute; }
       nav .hamburger .line1 {
-        top: 10%; }
+        top: 0; }
       nav .hamburger .line2 {
         top: 40%; }
       nav .hamburger .line3 {
-        top: 70%; }
+        bottom: 0; }
       nav .hamburger .ukrstanje {
         top: 40%;
         transform: rotate(45deg); }
@@ -62,7 +56,10 @@
       top: 10vh;
       right: 0;
       display: none;
-      position: absolute; }
+      position: absolute;
+      z-index: 1000;
+      border-left: 2px solid #ed1c24;
+      border-bottom: 2px solid #ed1c24; }
       nav .navigationBar li {
         padding: 7% 0; }
         nav .navigationBar li a {
@@ -79,14 +76,18 @@
       font-weight: 900;
       color: #fff; }
     .newsSectionHome .firstNewsHome {
-      width: 100%;
-      height: 30%;
+      width: 98%;
+      height: 20vh;
       background-image: url(../img/vanDijk.jpg);
       -webkit-background-size: cover;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      position: relative;
+      margin: 1%; }
       .newsSectionHome .firstNewsHome h1 {
-        padding: 30% 1% 5% 1%; }
+        position: absolute;
+        bottom: 3%;
+        padding: 0 1%; }
     .newsSectionHome .newsDef, .newsSectionHome .secondNewsHome, .newsSectionHome .thirdNewsHome, .newsSectionHome .fourthNewsHome, .newsSectionHome .fifthNewsHome, .newsSectionHome .sixthNewsHome, .newsSectionHome .seventhNewsHome, .newsSectionHome .eightNewsHome, .newsSectionHome .ninthNewsHome {
       width: 48%;
       height: 20vh;
@@ -94,10 +95,13 @@
       background-size: cover;
       background-position: center;
       margin: 1%;
-      float: left; }
+      float: left;
+      position: relative; }
     .newsSectionHome .h1NewsDef, .newsSectionHome .secondNewsHome h1, .newsSectionHome .thirdNewsHome h1, .newsSectionHome .fourthNewsHome h1, .newsSectionHome .fifthNewsHome h1, .newsSectionHome .sixthNewsHome h1, .newsSectionHome .seventhNewsHome h1, .newsSectionHome .eightNewsHome h1, .newsSectionHome .ninthNewsHome h1 {
-      padding: 45% 1% 1% 1%;
-      font-size: 2vh; }
+      bottom: 3%;
+      font-size: 2vh;
+      position: absolute;
+      padding: 0 1%; }
     .newsSectionHome .secondNewsHome {
       background-image: url(../img/clyne-milner.jpg); }
     .newsSectionHome .thirdNewsHome {
@@ -117,10 +121,15 @@
 
   .section {
     width: 100%;
-    display: none;
-    background-color: #fff; }
+    display: none; }
 
   /*--------------NEWS----------*/
+  .tittle {
+    color: #ed1c24;
+    font-size: 4vh;
+    float: left;
+    margin: 2% 50% 2% 4%; }
+
   .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, .news9 {
     width: 100%;
     text-align: center;
@@ -129,6 +138,38 @@
       width: 100%; }
     .news1 h2, .news2 h2, .news3 h2, .news4 h2, .news5 h2, .news6 h2, .news7 h2, .news8 h2, .news9 h2 {
       color: #000;
-      font-size: 4vh; } }
+      font-size: 4vh; }
+
+  /*---------SQUAD--------*/
+  .player {
+    float: left;
+    width: 100%;
+    height: 15vh; }
+    .player img {
+      width: 13vh;
+      float: left;
+      padding: 1vh; }
+    .player h1 {
+      font-size: 4vh;
+      font-weight: bold;
+      padding: 3% 0 0 25%; }
+    .player h2 {
+      font-size: 4vh;
+      font-weight: bold;
+      padding: 3% 0 0 25%; }
+    .player .playerDetails {
+      padding: 0 0 2% 3%;
+      display: none; }
+      .player .playerDetails h3 {
+        font-size: 2.5vh; }
+
+  .player:hover h1 {
+    font-size: 2.5vh;
+    padding-top: 1%; }
+  .player:hover h2 {
+    font-size: 2.5vh;
+    padding-top: 1%; }
+  .player:hover .playerDetails {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

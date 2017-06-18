@@ -25,5 +25,9 @@ $(document).ready(function(){
         	return(false);
 	});
 
+	$(".player").click( function() {
+		$(".playerDetails").fadeToggle(); 
+	});
+
 
 });
