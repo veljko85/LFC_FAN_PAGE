@@ -276,4 +276,52 @@
 			display: block;
 		}
 	}	
+
+												/*------TABLE------*/
+
+	.table {
+		float: left;
+		width: 100%;
+			h3 {
+				font-size: 2.5vh;
+				font-weight: 900;
+				text-align: center;
+			}
+			.club, .ClubName, .ranking, .clubLogo, .clubName, .goalDiference {
+				float: left;
+			}
+			.club	{
+				height: 5vh;
+				width: 100%;
+				border-bottom: 1px solid gray;
+			}
+			.ranking {
+				width: 10%;
+				padding-top: 1vh;
+			}
+			.clubLogo {
+				width: 20%;
+				img {
+				width: 5vh;
+				margin: 0 auto;
+				display: block;
+				}
+				h3 {
+					padding-top: 1vh;
+				}
+			}	
+			.clubName {
+				width: 40%;
+				padding-top: 1vh;
+			}
+			.goalDiference {
+				width: 15%;
+				padding-top: 1vh;
+			}
+			.poinst {
+				width: 15%;
+				float: right;
+				padding-top: 1vh;
+			}
+	}
 }
