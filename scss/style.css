@@ -210,10 +210,10 @@
 
   /*---------GALLERY--------*/
   .gallery {
-    width: 50vw; }
+    width: 100vw; }
     .gallery a {
       float: left; }
     .gallery img {
-      width: 15vw; } }
+      width: 20vw; } }
 
 /*# sourceMappingURL=style.css.map */
