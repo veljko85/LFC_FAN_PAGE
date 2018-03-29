@@ -11,7 +11,7 @@
 
   /*----------NAVIGATIN BAR---------------*/
   nav {
-    background-color: rgba(237, 28, 36, 0.7);
+    background-color: blue;
     height: 10vh;
     width: 100%;
     text-align: center; }
@@ -206,6 +206,14 @@
     .table .poinst {
       width: 15%;
       float: right;
-      padding-top: 1vh; } }
+      padding-top: 1vh; }
+
+  /*---------GALLERY--------*/
+  .gallery {
+    width: 50vw; }
+    .gallery a {
+      float: left; }
+    .gallery img {
+      width: 15vw; } }
 
 /*# sourceMappingURL=style.css.map */
