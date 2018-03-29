@@ -1,39 +1,24 @@
 /*
-Error: Undefined variable: "$livRed".
-        on line 78 of C:\Users\ProBook\Desktop\progr\LFC FAN PAGE\partials\mobile.scss
+Error: Undefined variable: "$livRedTrans".
+        on line 16 of C:\Users\ProBook\Desktop\progr\LFC FAN PAGE\partials\mobile.scss
 
-73: 			top: 10vh;
-74: 			right: 0;
-75: 			display: none;
-76: 			position: absolute;
-77: 			z-index: 1000;
-78: 			border-left: 2px solid $livRed;
-79: 			border-bottom: 2px solid $livRed;
-80: 			
-81: 			li {
-82: 				padding: 7% 0;
-83: 
+11: 			text-decoration: none;
+12: 		}
+13: 	}
+14: 												/*----------NAVIGATIN BAR---------------*\/
+15: 	nav	{
+16: 		background-color: $livRedTrans;
+17: 		height: 10vh;
+18: 		width: 100%;
+19: 		text-align: center;
+20: 		
+21: 		img {
 
 Backtrace:
-C:\Users\ProBook\Desktop\progr\LFC FAN PAGE\partials\mobile.scss:78
+C:\Users\ProBook\Desktop\progr\LFC FAN PAGE\partials\mobile.scss:16
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -91,4 +76,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$livRed\".\A         on line 78 of C:\Users\ProBook\Desktop\progr\LFC FAN PAGE\partials\mobile.scss\A \A 73: 			top: 10vh;\A 74: 			right: 0;\A 75: 			display: none;\A 76: 			position: absolute;\A 77: 			z-index: 1000;\A 78: 			border-left: 2px solid $livRed;\A 79: 			border-bottom: 2px solid $livRed;\A 80: 			\A 81: 			li {\A 82: 				padding: 7% 0;\A 83: "; }
+  content: "Error: Undefined variable: \"$livRedTrans\".\A         on line 16 of C:\Users\ProBook\Desktop\progr\LFC FAN PAGE\partials\mobile.scss\A \A 11: 			text-decoration: none;\A 12: 		}\A 13: 	}\A 14: 												/*----------NAVIGATIN BAR---------------*/\A 15: 	nav	{\A 16: 		background-color: $livRedTrans;\A 17: 		height: 10vh;\A 18: 		width: 100%;\A 19: 		text-align: center;\A 20: 		\A 21: 		img {"; }
