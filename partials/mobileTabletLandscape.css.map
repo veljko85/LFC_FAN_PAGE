@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kEAAkE;EAEjE,IAAK;IACJ,gBAAgB,EAAE,KAAK",
+"sources": ["mobileTabletLandscape.scss"],
+"names": [],
+"file": "mobileTabletLandscape.css"
+}
