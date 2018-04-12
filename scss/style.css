@@ -1,82 +1,483 @@
-/*
-Error: Invalid CSS after "		float: left": expected ";", was ":"
-        on line 240 of C:/Users/Veljko/Desktop/veljko/progr/LFC FAN PAGE/partials/mobileTabletLandscape.scss
-        from line 4 of C:\Users\Veljko\Desktop\veljko\progr\LFC FAN PAGE\scss\style.scss
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden; }
+    body a {
+      text-decoration: none; }
 
-235: 	}	
-236: 
-237: 												/*------TABLE------*\/
-238: 
-239: 	.table {
-240: 		float: left:
-241: 		width: 70%;
-242: 		margin-left: 15%;
-243: 			h3 {
-244: 				font-size: 5vh;
-245: 				font-weight: 900;
+  /*----------NAVIGATIN BAR---------------*/
+  nav {
+    background-color: rgba(237, 28, 36, 0.7);
+    height: 10vh;
+    width: 100%;
+    text-align: center; }
+    nav img {
+      height: 180%;
+      float: left; }
+    nav h1 {
+      float: left;
+      color: #fff;
+      font-size: 4vh;
+      font-weight: 900;
+      margin: 3.1vh 0; }
+    nav .hamburger {
+      height: 40%;
+      width: 10%;
+      float: right;
+      right: 7%;
+      top: 30%;
+      position: relative; }
+      nav .hamburger .line1, nav .hamburger .line2, nav .hamburger .line3 {
+        width: 100%;
+        height: 20%;
+        background-color: #FFF;
+        transition: transform .3s, top .3s;
+        position: absolute; }
+      nav .hamburger .line1 {
+        top: 0; }
+      nav .hamburger .line2 {
+        top: 40%; }
+      nav .hamburger .line3 {
+        bottom: 0; }
+      nav .hamburger .ukrstanje {
+        top: 40%;
+        transform: rotate(45deg); }
+      nav .hamburger .ukrstanje-suprotno {
+        top: 40%;
+        transform: rotate(-45deg); }
+    nav .navigationBar {
+      background-color: #fff;
+      width: 40%;
+      height: 30vh;
+      top: 10vh;
+      right: 0;
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      border-left: 2px solid #ed1c24;
+      border-bottom: 2px solid #ed1c24; }
+      nav .navigationBar li {
+        padding: 7% 0; }
+        nav .navigationBar li a {
+          color: #ed1c24;
+          font-size: 4vh; }
 
-Backtrace:
-C:/Users/Veljko/Desktop/veljko/progr/LFC FAN PAGE/partials/mobileTabletLandscape.scss:240
-C:\Users\Veljko\Desktop\veljko\progr\LFC FAN PAGE\scss\style.scss:4
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:804:in `block in try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:421:in `media_directive'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"		float: left\": expected \";\", was \":\"\A         on line 240 of C:/Users/Veljko/Desktop/veljko/progr/LFC FAN PAGE/partials/mobileTabletLandscape.scss\A         from line 4 of C:\Users\Veljko\Desktop\veljko\progr\LFC FAN PAGE\scss\style.scss\A \A 235: 	}	\A 236: \A 237: 												/*------TABLE------*/\A 238: \A 239: 	.table {\A 240: 		float: left:\A 241: 		width: 70%;\A 242: 		margin-left: 15%;\A 243: 			h3 {\A 244: 				font-size: 5vh;\A 245: 				font-weight: 900;"; }
+  /*------------HOMEPAGE NEWS--------------*/
+  .newsSectionHome {
+    width: 100%;
+    margin: 20% 0 0 0; }
+    .newsSectionHome a {
+      text-decoration: none;
+      font-size: 3vh;
+      font-weight: 900;
+      color: #fff; }
+    .newsSectionHome .firstNewsHome {
+      width: 98%;
+      height: 20vh;
+      background-image: url(../img/vanDijk.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin: 1%; }
+      .newsSectionHome .firstNewsHome h1 {
+        position: absolute;
+        bottom: 3%;
+        padding: 0 1%; }
+    .newsSectionHome .h1NewsDef, .newsSectionHome .secondNewsHome h1, .newsSectionHome .thirdNewsHome h1, .newsSectionHome .fourthNewsHome h1, .newsSectionHome .fifthNewsHome h1, .newsSectionHome .sixthNewsHome h1, .newsSectionHome .seventhNewsHome h1, .newsSectionHome .eightNewsHome h1, .newsSectionHome .ninthNewsHome h1 {
+      bottom: 3%;
+      font-size: 2vh;
+      position: absolute;
+      padding: 0 1%; }
+    .newsSectionHome .secondNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/clyne-milner.jpg); }
+    .newsSectionHome .thirdNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/stiven.jpg); }
+    .newsSectionHome .fourthNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/salah.jpg); }
+    .newsSectionHome .fifthNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/coutinho.jpg); }
+    .newsSectionHome .sixthNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/sturridge.jpg); }
+    .newsSectionHome .seventhNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/vanDijk2.jpg); }
+    .newsSectionHome .eightNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/suarezTorres.jpg); }
+    .newsSectionHome .ninthNewsHome {
+      width: 48%;
+      height: 20vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      margin: 1%;
+      float: left;
+      position: relative;
+      background-image: url(../img/klopp2.jpg); }
+
+  .section {
+    width: 100%;
+    display: none; }
+
+  /*--------------NEWS----------*/
+  .tittle {
+    color: #ed1c24;
+    font-size: 4vh;
+    float: left;
+    margin: 2% 50% 2% 4%; }
+
+  .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, .news9 {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%; }
+    .news1 img, .news2 img, .news3 img, .news4 img, .news5 img, .news6 img, .news7 img, .news8 img, .news9 img {
+      width: 100%; }
+    .news1 h2, .news2 h2, .news3 h2, .news4 h2, .news5 h2, .news6 h2, .news7 h2, .news8 h2, .news9 h2 {
+      color: #000;
+      font-size: 4vh; }
+
+  /*---------SQUAD--------*/
+  .player {
+    float: left;
+    width: 100%;
+    height: 15vh; }
+    .player img {
+      width: 13vh;
+      float: left;
+      padding: 1vh; }
+    .player h1 {
+      font-size: 4vh;
+      font-weight: bold;
+      padding: 3% 0 0 25%; }
+    .player h2 {
+      font-size: 4vh;
+      font-weight: bold;
+      padding: 3% 0 0 25%; }
+    .player .playerDetails {
+      padding: 0 0 2% 3%;
+      display: none; }
+      .player .playerDetails h3 {
+        font-size: 2.5vh; }
+
+  .player:hover h1 {
+    font-size: 2.5vh;
+    padding-top: 1%; }
+  .player:hover h2 {
+    font-size: 2.5vh;
+    padding-top: 1%; }
+  .player:hover .playerDetails {
+    display: block; }
+
+  /*------TABLE------*/
+  .table {
+    float: left;
+    width: 100%; }
+    .table h3 {
+      font-size: 2.5vh;
+      font-weight: 900;
+      text-align: center; }
+    .table .club, .table .ClubName, .table .ranking, .table .clubLogo, .table .clubName, .table .goalDiference {
+      float: left; }
+    .table .club {
+      height: 5vh;
+      width: 100%;
+      border-bottom: 1px solid gray; }
+    .table .ranking {
+      width: 10%;
+      padding-top: 1vh; }
+    .table .clubLogo {
+      width: 20%; }
+      .table .clubLogo img {
+        width: 5vh;
+        margin: 0 auto;
+        display: block; }
+      .table .clubLogo h3 {
+        padding-top: 1vh; }
+    .table .clubName {
+      width: 40%;
+      padding-top: 1vh; }
+    .table .goalDiference {
+      width: 15%;
+      padding-top: 1vh; }
+    .table .poinst {
+      width: 15%;
+      float: right;
+      padding-top: 1vh; }
+
+  /*---------GALLERY--------*/
+  .gallery {
+    width: 100vw; }
+    .gallery a {
+      float: left; }
+    .gallery img {
+      width: 20vw; } }
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden; }
+    body a {
+      text-decoration: none; }
+
+  /*----------NAVIGATIN BAR---------------*/
+  nav {
+    background-color: rgba(237, 28, 36, 0.7);
+    height: 15vh;
+    width: 100%;
+    text-align: center; }
+    nav img {
+      height: 180%;
+      float: left; }
+    nav h1 {
+      float: left;
+      color: #fff;
+      font-size: 5vh;
+      font-weight: 900;
+      margin: 5vh 0; }
+    nav .hamburger {
+      height: 50%;
+      width: 7%;
+      float: right;
+      right: 7%;
+      top: 30%;
+      position: relative; }
+      nav .hamburger .line1, nav .hamburger .line2, nav .hamburger .line3 {
+        width: 100%;
+        height: 20%;
+        background-color: #FFF;
+        transition: transform .3s, top .3s;
+        position: absolute; }
+      nav .hamburger .line1 {
+        top: 0; }
+      nav .hamburger .line2 {
+        top: 40%; }
+      nav .hamburger .line3 {
+        bottom: 0; }
+      nav .hamburger .ukrstanje {
+        top: 40%;
+        transform: rotate(45deg); }
+      nav .hamburger .ukrstanje-suprotno {
+        top: 40%;
+        transform: rotate(-45deg); }
+    nav .navigationBar {
+      background-color: #fff;
+      width: 40%;
+      height: 52vh;
+      top: 15vh;
+      right: 0;
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      border-left: 2px solid #ed1c24;
+      border-bottom: 2px solid #ed1c24; }
+      nav .navigationBar li {
+        padding: 4% 0; }
+        nav .navigationBar li a {
+          color: #ed1c24;
+          font-size: 8vh; }
+
+  /*------------HOMEPAGE NEWS--------------*/
+  .newsSectionHome {
+    width: 100%;
+    margin: 9% 0 0 0; }
+    .newsSectionHome a {
+      text-decoration: none;
+      font-size: 3vh;
+      font-weight: 900;
+      color: #fff; }
+    .newsSectionHome .NewsHomeDef, .newsSectionHome .firstNewsHome, .newsSectionHome .secondNewsHome, .newsSectionHome .thirdNewsHome, .newsSectionHome .fourthNewsHome, .newsSectionHome .fifthNewsHome, .newsSectionHome .sixthNewsHome, .newsSectionHome .seventhNewsHome, .newsSectionHome .eightNewsHome, .newsSectionHome .ninthNewsHome {
+      width: 49%;
+      height: 30vh;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      float: left;
+      position: relative;
+      margin: 0.5%; }
+      .newsSectionHome .NewsHomeDef h1, .newsSectionHome .firstNewsHome h1, .newsSectionHome .secondNewsHome h1, .newsSectionHome .thirdNewsHome h1, .newsSectionHome .fourthNewsHome h1, .newsSectionHome .fifthNewsHome h1, .newsSectionHome .sixthNewsHome h1, .newsSectionHome .seventhNewsHome h1, .newsSectionHome .eightNewsHome h1, .newsSectionHome .ninthNewsHome h1 {
+        position: absolute;
+        font-size: 5vh;
+        bottom: 3%;
+        padding: 0 1%; }
+    .newsSectionHome .firstNewsHome {
+      background-image: url(../img/vanDijk.jpg); }
+    .newsSectionHome .secondNewsHome {
+      background-image: url(../img/clyne-milner.jpg); }
+    .newsSectionHome .thirdNewsHome {
+      background-image: url(../img/stiven.jpg); }
+    .newsSectionHome .fourthNewsHome {
+      background-image: url(../img/salah.jpg); }
+    .newsSectionHome .fifthNewsHome {
+      background-image: url(../img/coutinho.jpg); }
+    .newsSectionHome .sixthNewsHome {
+      background-image: url(../img/sturridge.jpg); }
+    .newsSectionHome .seventhNewsHome {
+      background-image: url(../img/vanDijk2.jpg); }
+    .newsSectionHome .eightNewsHome {
+      background-image: url(../img/suarezTorres.jpg); }
+    .newsSectionHome .ninthNewsHome {
+      background-image: url(../img/klopp2.jpg); }
+
+  .section {
+    width: 100%;
+    display: none; }
+
+  /*--------------NEWS----------*/
+  .tittle {
+    color: #ed1c24;
+    font-size: 8vh;
+    float: left;
+    margin: 2% 50% 2% 4%; }
+
+  .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, .news9 {
+    width: 48%;
+    text-align: center;
+    padding-top: 4%;
+    float: left; }
+    .news1 img, .news2 img, .news3 img, .news4 img, .news5 img, .news6 img, .news7 img, .news8 img, .news9 img {
+      width: 100%; }
+    .news1 h2, .news2 h2, .news3 h2, .news4 h2, .news5 h2, .news6 h2, .news7 h2, .news8 h2, .news9 h2 {
+      color: #000;
+      font-size: 5vh; }
+
+  /*---------SQUAD--------*/
+  .player {
+    float: left;
+    width: 50%;
+    height: 20vh; }
+    .player img {
+      width: 18vh;
+      float: left;
+      padding: 1vh; }
+    .player h1 {
+      font-size: 5vh;
+      font-weight: bold;
+      padding: 5vh 0 0 5%; }
+    .player h2 {
+      font-size: 5vh;
+      font-weight: bold;
+      padding: 5vh 0 0 5%; }
+    .player .playerDetails {
+      padding: 0 0 0 0;
+      display: none; }
+      .player .playerDetails h3 {
+        font-size: 3.5vh; }
+
+  .player:hover h1 {
+    font-size: 3.5vh;
+    padding-top: 1%; }
+  .player:hover h2 {
+    font-size: 3.5vh;
+    padding-top: 1%; }
+  .player:hover .playerDetails {
+    display: block; }
+
+  /*------TABLE------*/
+  .table {
+    float: left;
+    width: 70%;
+    margin-left: 15%; }
+    .table h3 {
+      font-size: 5vh;
+      font-weight: 900;
+      text-align: center; }
+    .table .club, .table .ClubName, .table .ranking, .table .clubLogo, .table .clubName, .table .goalDiference {
+      float: left; }
+    .table .club {
+      height: 7vh;
+      width: 100%;
+      border-bottom: 1px solid gray;
+      border-left: 1px solid gray;
+      border-right: 1px solid gray; }
+    .table .ranking {
+      width: 5%;
+      padding-top: 1vh; }
+    .table .clubLogo {
+      width: 10%; }
+      .table .clubLogo img {
+        width: 5vh;
+        margin: 0 auto;
+        display: block; }
+      .table .clubLogo h3 {
+        padding-top: 1vh; }
+    .table .clubName {
+      width: 70%;
+      padding-top: 1vh; }
+    .table .goalDiference {
+      width: 7.5%;
+      padding-top: 1vh; }
+    .table .poinst {
+      width: 7.5%;
+      float: right;
+      padding-top: 1vh; }
+
+  /*---------GALLERY--------*/
+  .gallery {
+    width: 100vw; }
+    .gallery a {
+      float: left; }
+    .gallery img {
+      width: 20vw; } }
+
+/*# sourceMappingURL=style.css.map */
