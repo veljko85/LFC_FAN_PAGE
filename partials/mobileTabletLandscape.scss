@@ -176,6 +176,7 @@
 		width: 48%;
 		text-align: center;
 		padding-top: 4%;
+		float: left;
 		
 		img {
 			width: 100%;
@@ -204,12 +205,12 @@
 		h1 {
 			font-size: 5vh;
 			font-weight: bold;
-			padding: 3% 0 0 5%;
+			padding: 5vh 0 0 5%;
 		}
 		h2 {
 			font-size: 5vh;
 			font-weight: bold;
-			padding: 3% 0 0 5%;
+			padding: 5vh 0 0 5%;
 		}
 		.playerDetails {
 			padding: 0 0 0 0;
@@ -236,8 +237,9 @@
 												/*------TABLE------*/
 
 	.table {
-		
-		width: 50%;
+		float: left:
+		width: 70%;
+		margin-left: 15%;
 			h3 {
 				font-size: 5vh;
 				font-weight: 900;
@@ -254,11 +256,11 @@
 				border-right: 1px solid gray;
 			}
 			.ranking {
-				width: 10%;
+				width: 5%;
 				padding-top: 1vh;
 			}
 			.clubLogo {
-				width: 20%;
+				width: 10%;
 				img {
 				width: 5vh;
 				margin: 0 auto;
@@ -269,15 +271,15 @@
 				}
 			}	
 			.clubName {
-				width: 40%;
+				width: 70%;
 				padding-top: 1vh;
 			}
 			.goalDiference {
-				width: 15%;
+				width: 7.5%;
 				padding-top: 1vh;
 			}
 			.poinst {
-				width: 15%;
+				width: 7.5%;
 				float: right;
 				padding-top: 1vh;
 			}
