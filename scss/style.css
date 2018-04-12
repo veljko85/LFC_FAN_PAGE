@@ -386,12 +386,12 @@
   /*--------------NEWS----------*/
   .tittle {
     color: #ed1c24;
-    font-size: 4vh;
+    font-size: 8vh;
     float: left;
     margin: 2% 50% 2% 4%; }
 
   .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, .news9 {
-    width: 100%;
+    width: 50%;
     text-align: center;
     padding-top: 5%; }
     .news1 img, .news2 img, .news3 img, .news4 img, .news5 img, .news6 img, .news7 img, .news8 img, .news9 img {
