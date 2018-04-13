@@ -173,7 +173,7 @@
 		margin: 2% 50% 2% 4%;
 	}												
 	.news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, , .news9 {
-		width: 48%;
+		width: 48.5%;
 		text-align: center;
 		padding-top: 2%;
 		float: left;
@@ -211,7 +211,7 @@
 		h2 {
 			font-size: 5vh;
 			font-weight: bold;
-			padding: 5% 0 0 5%;
+			padding: 0 0 5% 5%;
 		}
 		.playerDetails {
 			padding: 0 0 0 0;
@@ -256,12 +256,17 @@
 				border-left: 1px solid gray;
 				border-right: 1px solid gray;
 			}
+			.clubDescription	{
+				height: 7vh;
+				width: 100%;
+				border-bottom: 1px solid gray;
+			}
 			.ranking {
-				width: 5%;
+				width: 7.5%;
 				padding-top: 1vh;
 			}
 			.clubLogo {
-				width: 10%;
+				width: 12.5%;
 				img {
 				width: 5vh;
 				margin: 0 auto;
@@ -272,7 +277,7 @@
 				}
 			}	
 			.clubName {
-				width: 62.5%;
+				width: 67.5%;
 				padding-top: 1vh;
 			}
 			.goalDiference {
@@ -289,12 +294,13 @@
 	                                            /*---------GALLERY--------*/
 
 	.gallery {
-		width: 100vw;
+		width: 98vw;
 		a  {
 		  float: left;
 		}
 		img  {
-		  width: 20vw;
+		  width: 19vw;
+		  padding-left: 1vw;
 		  }	
 	}
 }
