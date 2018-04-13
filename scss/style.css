@@ -391,7 +391,7 @@
     margin: 2% 50% 2% 4%; }
 
   .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8, .news9 {
-    width: 48%;
+    width: 48.5%;
     text-align: center;
     padding-top: 2%;
     float: left;
@@ -418,7 +418,7 @@
     .player h2 {
       font-size: 5vh;
       font-weight: bold;
-      padding: 5% 0 0 5%; }
+      padding: 0 0 5% 5%; }
     .player .playerDetails {
       padding: 0 0 0 0;
       display: none; }
@@ -451,11 +451,15 @@
       border-bottom: 1px solid gray;
       border-left: 1px solid gray;
       border-right: 1px solid gray; }
+    .table .clubDescription {
+      height: 7vh;
+      width: 100%;
+      border-bottom: 1px solid gray; }
     .table .ranking {
-      width: 5%;
+      width: 7.5%;
       padding-top: 1vh; }
     .table .clubLogo {
-      width: 10%; }
+      width: 12.5%; }
       .table .clubLogo img {
         width: 5vh;
         margin: 0 auto;
@@ -463,7 +467,7 @@
       .table .clubLogo h3 {
         padding-top: 1vh; }
     .table .clubName {
-      width: 62.5%;
+      width: 67.5%;
       padding-top: 1vh; }
     .table .goalDiference {
       width: 7.5%;
@@ -475,10 +479,11 @@
 
   /*---------GALLERY--------*/
   .gallery {
-    width: 100vw; }
+    width: 98vw; }
     .gallery a {
       float: left; }
     .gallery img {
-      width: 20vw; } }
+      width: 19vw;
+      padding-left: 1vw; } }
 
 /*# sourceMappingURL=style.css.map */
