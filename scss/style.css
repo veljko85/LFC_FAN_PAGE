@@ -237,7 +237,7 @@
       text-align: center; }
     .table .club, .table .ClubName, .table .ranking, .table .clubLogo, .table .clubName, .table .goalDiference {
       float: left; }
-    .table .club {
+    .table .club, .table clubDescription {
       height: 5vh;
       width: 100%;
       border-bottom: 1px solid gray; }
