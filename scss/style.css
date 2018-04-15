@@ -498,7 +498,7 @@
   /*----------NAVIGATIN BAR---------------*/
   nav {
     background-color: rgba(237, 28, 36, 0.7);
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     text-align: center; }
     nav img {
@@ -507,16 +507,17 @@
     nav h1 {
       float: left;
       color: #fff;
-      font-size: 5vh;
+      font-size: 4vh;
       font-weight: 900;
-      margin: 5vh 0; }
+      margin: 2vh 0; }
     nav .hamburger {
       height: 50%;
       width: 7%;
       float: right;
       right: 7%;
       top: 30%;
-      position: relative; }
+      position: relative;
+      display: none; }
       nav .hamburger .line1, nav .hamburger .line2, nav .hamburger .line3 {
         width: 100%;
         height: 20%;
@@ -536,21 +537,16 @@
         top: 40%;
         transform: rotate(-45deg); }
     nav .navigationBar {
-      background-color: #fff;
-      width: 40%;
-      height: 52vh;
-      top: 15vh;
-      right: 0;
-      display: none;
+      margin-left: 75vw;
       position: absolute;
-      z-index: 1000;
-      border-left: 2px solid #ed1c24;
-      border-bottom: 2px solid #ed1c24; }
+      z-index: 1000; }
       nav .navigationBar li {
-        padding: 4% 0; }
+        padding: 7vh 0 0 2vw;
+        float: left; }
         nav .navigationBar li a {
-          color: #ed1c24;
-          font-size: 8vh; }
+          color: white;
+          font-size: 2.5vh;
+          font-weight: 700; }
 
   /*------------HOMEPAGE NEWS--------------*/
   .newsSectionHome {

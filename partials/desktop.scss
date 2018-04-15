@@ -14,7 +14,7 @@
 												/*----------NAVIGATIN BAR---------------*/
 	nav	{
 		background-color: $livRedTrans;
-		height: 15vh;
+		height: 10vh;
 		width: 100%;
 		text-align: center;
 		
@@ -26,9 +26,9 @@
 		h1 {
 			float: left;
 			color: #fff;
-			font-size: 5vh;
+			font-size: 4vh;
 			font-weight: 900;
-			margin: 5vh 0;
+			margin: 2vh 0;
 		}
 
 		.hamburger	{
@@ -38,6 +38,7 @@
 			right: 7%;
 			top: 30%;
 			position: relative;
+			display: none;
 			
 			.line1, .line2, .line3 {
 				width: 100%;
@@ -66,23 +67,23 @@
 		}
 
 		.navigationBar {
-			background-color: #fff;
-			width: 40%;
-			height: 52vh;
-			top: 15vh;
-			right: 0;
-			display: none;
+			margin-left: 75vw;
+			
+			
+			
+			
 			position: absolute;
 			z-index: 1000;
-			border-left: 2px solid $livRed;
-			border-bottom: 2px solid $livRed;
+			
 			
 			li {
-				padding: 4% 0;
+				padding: 7vh 0 0 2vw;
+				float: left;
 
 				a {
-				color: $livRed;
-				font-size: 8vh;
+				color: white;
+				font-size: 2.5vh;
+				font-weight: 700;
 				}
 			}	
 		}
