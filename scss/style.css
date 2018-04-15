@@ -395,7 +395,7 @@
     text-align: center;
     padding-top: 2%;
     float: left;
-    margin: 0 1%; }
+    margin: 0 0 0 1%; }
     .news1 img, .news2 img, .news3 img, .news4 img, .news5 img, .news6 img, .news7 img, .news8 img, .news9 img {
       width: 100%; }
     .news1 h2, .news2 h2, .news3 h2, .news4 h2, .news5 h2, .news6 h2, .news7 h2, .news8 h2, .news9 h2 {
@@ -427,10 +427,10 @@
 
   .player:hover h1 {
     font-size: 3.5vh;
-    padding-top: 1%; }
+    padding: 0; }
   .player:hover h2 {
     font-size: 3.5vh;
-    padding-top: 1%; }
+    padding: 0; }
   .player:hover .playerDetails {
     display: block; }
 
@@ -467,7 +467,7 @@
       .table .clubLogo h3 {
         padding-top: 1vh; }
     .table .clubName {
-      width: 67.5%;
+      width: 57.5%;
       padding-top: 1vh; }
     .table .goalDiference {
       width: 7.5%;
@@ -479,11 +479,11 @@
 
   /*---------GALLERY--------*/
   .gallery {
-    width: 98vw; }
+    width: 99vw; }
     .gallery a {
       float: left; }
     .gallery img {
-      width: 19vw;
+      width: 18.6vw;
       padding-left: 1vw; } }
 
 /*# sourceMappingURL=style.css.map */
