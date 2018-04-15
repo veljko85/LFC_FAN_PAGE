@@ -177,7 +177,7 @@
 		text-align: center;
 		padding-top: 2%;
 		float: left;
-		margin: 0 1%;
+		margin: 0 0 0 1%;
 		
 		img {
 			width: 100%;
@@ -224,11 +224,11 @@
 	.player:hover {
 		h1 {
 			font-size: 3.5vh;
-			padding-top: 1%;
+			padding: 0;
 		}
 		h2 {
 			font-size: 3.5vh;
-			padding-top: 1%;
+			padding: 0;
 		}
 		.playerDetails{
 			display: block;
@@ -277,7 +277,7 @@
 				}
 			}	
 			.clubName {
-				width: 67.5%;
+				width: 57.5%;
 				padding-top: 1vh;
 			}
 			.goalDiference {
@@ -294,12 +294,12 @@
 	                                            /*---------GALLERY--------*/
 
 	.gallery {
-		width: 98vw;
+		width: 99vw;
 		a  {
 		  float: left;
 		}
 		img  {
-		  width: 19vw;
+		  width: 18.6vw;
 		  padding-left: 1vw;
 		  }	
 	}
