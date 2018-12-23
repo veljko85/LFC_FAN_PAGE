@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
 	});
-	
+if (document.body.clientWidh <= 1024) {	
 	$(".navigationBar a").click( function() {
 		
 		$(".newsSectionHome").hide();
@@ -20,7 +20,9 @@ $(document).ready(function(){
 		$(".line1").toggleClass("ukrstanje");
 		$(".line3").toggleClass("ukrstanje-suprotno");
 		$(".navigationBar").slideToggle();
-		
+	});
+}	
+	$(".navigationBar a").click( function() {		
 		$(".section").load($(this).attr("href")).hide().fadeIn();
         	return(false);
 	});
