@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+if (document.body.clientWidth <= 1024) {
 	$(".hamburger").click( function() {
 		
 		$(".line2").fadeToggle();
@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
 	});
-if (document.body.clientWidh <= 1024) {	
+
 	$(".navigationBar a").click( function() {
 		
 		$(".newsSectionHome").hide();
