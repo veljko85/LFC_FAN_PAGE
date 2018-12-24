@@ -12,9 +12,6 @@ if (document.body.clientWidth <= 1024) {
 	});
 
 	$(".navigationBar a").click( function() {
-		
-		$(".newsSectionHome").hide();
-		$(".section").show();
 
 		$(".line2").fadeToggle();
 		$(".line1").toggleClass("ukrstanje");
@@ -22,7 +19,9 @@ if (document.body.clientWidth <= 1024) {
 		$(".navigationBar").slideToggle();
 	});
 }	
-	$(".navigationBar a").click( function() {		
+	$(".navigationBar a").click( function() {
+		$(".newsSectionHome").hide();
+		$(".section").show();		
 		$(".section").load($(this).attr("href")).hide().fadeIn();
         	return(false);
 	});
